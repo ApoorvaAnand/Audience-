@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="2" total="6" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Example test run" duration-ms="54421" started-at="2018-02-20T16:19:54Z" finished-at="2018-02-20T16:20:48Z">
+    <groups>
+    </groups>
+    <test name="Simple Test" duration-ms="54421" started-at="2018-02-20T16:19:54Z" finished-at="2018-02-20T16:20:48Z">
+      <class name="com.audience.campaign.DefineCampaign">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.audience.campaign.DefineCampaign@5bcab519]" name="openBrowser" is-config="true" duration-ms="12571" started-at="2018-02-20T21:49:54Z" finished-at="2018-02-20T21:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="definecampaign()[pri:0, instance:com.audience.campaign.DefineCampaign@5bcab519]" name="definecampaign" duration-ms="25810" started-at="2018-02-20T21:50:06Z" finished-at="2018-02-20T21:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- definecampaign -->
+        <test-method status="PASS" signature="campaignOptions()[pri:0, instance:com.audience.campaign.DefineCampaign@5bcab519]" name="campaignOptions" duration-ms="16008" started-at="2018-02-20T21:50:32Z" depends-on-methods="com.audience.campaign.DefineCampaign.definecampaign" finished-at="2018-02-20T21:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campaignOptions -->
+      </class> <!-- com.audience.campaign.DefineCampaign -->
+      <class name="com.audience.pushcontent.PushContent">
+        <test-method status="FAIL" signature="definecampaign()[pri:0, instance:com.audience.pushcontent.PushContent@56ef9176]" name="definecampaign" duration-ms="2" started-at="2018-02-20T21:50:48Z" finished-at="2018-02-20T21:50:48Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.audience.campaign.DefineCampaign.definecampaign(DefineCampaign.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- definecampaign -->
+        <test-method status="FAIL" signature="push(java.lang.String)[pri:0, instance:com.audience.pushcontent.PushContent@56ef9176]" name="push" duration-ms="0" started-at="2018-02-20T21:50:48Z" finished-at="2018-02-20T21:50:48Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method push requires 1 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method push requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- push -->
+        <test-method status="SKIP" signature="pushOptions()[pri:0, instance:com.audience.pushcontent.PushContent@56ef9176]" name="pushOptions" duration-ms="0" started-at="2018-02-20T21:50:48Z" depends-on-methods="com.audience.pushcontent.PushContent.push" finished-at="2018-02-20T21:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pushOptions -->
+        <test-method status="SKIP" signature="campaignOptions()[pri:0, instance:com.audience.pushcontent.PushContent@56ef9176]" name="campaignOptions" duration-ms="0" started-at="2018-02-20T21:50:48Z" depends-on-methods="com.audience.campaign.DefineCampaign.definecampaign" finished-at="2018-02-20T21:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campaignOptions -->
+      </class> <!-- com.audience.pushcontent.PushContent -->
+    </test> <!-- Simple Test -->
+  </suite> <!-- Example test run -->
+</testng-results>
